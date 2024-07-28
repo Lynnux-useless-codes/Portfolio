@@ -1,0 +1,40 @@
+/**
+* copyright 2024 @Dark-LYNN
+*/
+
+/*-----------------------------------*\
+    #About
+\*-----------------------------------*/
+
+.about .articletitle { margin-bottom: 15px; }
+
+.abouttext {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
+
+.article-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+}
+
+.abouttext .pliot { margin-bottom: 15px; }
+
+@media (min-width: 580px) {
+    .about .articletitle { margin-bottom: 20px; }
+
+    .abouttext { margin-bottom: 40px; }
+
+    .articletitle::after {
+        width: 40px;
+        height: 5px;
+    }
+}

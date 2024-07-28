@@ -1,0 +1,56 @@
+/**
+* copyright 2024 @Dark-LYNN
+*/
+
+/*-----------------------------------*\
+    #CLIENTS
+\*-----------------------------------*/
+
+.clients { margin-bottom: 15px; }
+
+.clientslist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 0 -15px;
+    padding: 25px;
+    padding-bottom: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 25px;
+}
+
+.clientsitem {
+    min-width: 50%;
+    scroll-snap-align: start;
+}
+
+.clientsitem .image {
+    width: 100%;
+    filter: grayscale(1);
+    transition: var(--transition-1);
+}
+
+.clientsitem .image:hover { filter: grayscale(0); }
+
+@media (min-width: 450px) {
+    .clientsitem { min-width: calc(33.33% - 10px); }
+}
+
+@media (min-width: 580px) {
+    .clientslist {
+        gap: 50px;
+        margin: 0 -30px;
+        padding: 45px;
+        scroll-padding-inline: 45px;
+    }
+
+    .clientsitem { min-width: calc(33.33% - 35px); }
+}
+
+@media (min-width: 1024px) {
+    .clientsitem { min-width: calc(25% - 38px); }
+}

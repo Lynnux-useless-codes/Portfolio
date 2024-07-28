@@ -1,0 +1,63 @@
+/**
+* copyright 2024 @Dark-LYNN
+*/
+
+/*-----------------------------------*\
+    #SKILLS
+\*-----------------------------------*/
+
+.skillstitle { margin-bottom: 20px; }
+
+.skillslist { padding: 20px; }
+
+/*.skill {
+    padding-bottom: 5vh;
+} */
+
+.skillsitem:not(:last-child) { margin-bottom: 15px; }
+
+.skill .titlewrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.skill .titlewrapper .data {
+    color: var(--light-gray);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-300);
+}
+
+.skillprogressbg {
+    background: var(--jet);
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.skillprogressfill {
+    background: var(--text-gradient-yellow);
+    height: 100%;
+    border-radius: inherit;
+}
+
+/* Artistics */
+.skill1 {
+    width: 12%;
+}
+
+/* Web design/development */
+.skill2 {
+    width: 23%;
+}
+
+/* Bot Development */
+.skill3 {
+    width: 45%;
+}
+
+/* Game Development */
+.skill4 {
+    width: 5%;
+}

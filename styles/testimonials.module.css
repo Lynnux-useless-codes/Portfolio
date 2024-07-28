@@ -1,0 +1,125 @@
+/**
+* copyright 2024 @Dark-LYNN
+*/
+
+/*-----------------------------------*\
+    #TESTIMONIALS
+\*-----------------------------------*/
+
+.testimonials { margin-bottom: 30px; }
+
+.testimonialstitle { margin-bottom: 20px; }
+
+.testimonialslist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 0 -15px;
+    padding: 25px 15px;
+    padding-bottom: 35px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+
+.testimonialsitem {
+    min-width: 100%;
+    scroll-snap-align: center;
+}
+
+.testimonialsavatarbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(15px, -25px);
+    background: var(--bg-gradient-onyx);
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+}
+
+.testimonialsitemtitle {
+    margin-bottom: 7px;
+}
+
+.testimonialstext {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (min-width: 580px) {
+    .testimonialstitle { margin-bottom: 25px; }
+
+    .testimonialslist {
+        gap: 30px;
+        margin: 0 -30px;
+        padding: 30px;
+        padding-bottom: 35px;
+    }
+
+    .contentcard {
+        padding: 30px;
+        padding-top: 25px;
+    }
+
+    .testimonialsavatarbox {
+        transform: translate(30px, -30px);
+        border-radius: 20px;
+    }
+
+    .testimonialsavatarbox .image { width: 80px; }
+
+    .testimonialsitemtitle {
+        margin-left: 100px;
+        position: relative;
+        top: -1rem;
+        left: 0.5rem;
+    }
+
+    .testimonialstext {
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+}
+
+.contentcard {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 15px;
+    padding-top: 45px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.contentcard::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+
+@media (min-width: 768px) {
+    .testimonialsmodal {
+        gap: 35px;
+        max-width: 680px;
+    }
+
+    .modalavatarbox .image { width: 80px; }
+}
+
+@media (min-width: 1024px) {
+    .testimonialsitem { min-width: calc(50% - 15px); }
+}

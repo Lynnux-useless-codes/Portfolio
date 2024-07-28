@@ -1,0 +1,322 @@
+/**
+* copyright 2024 @Dark-LYNN
+*/
+
+/*-----------------------------------*\
+    #SIDEBAR
+\*-----------------------------------*/
+
+.sidebar {
+    margin-bottom: 15px;
+    max-height: 112px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+
+.iconbox {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--orange-yellow-crayola);
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
+
+.iconbox::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--eerie-black-1);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.iconbox ion-icon { --ionicon-stroke-width: 35px; }
+
+.sidebar.active {
+    max-height: 405px !important;
+}
+
+.sidebarinfo {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatarbox, .image {
+    background: var(--bg-gradient-onyx);
+    border-radius: 20px;
+}
+
+.image {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.infocontent .name {
+    color: var(--white-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+}
+
+.infocontent .title {
+    color: var(--white-1);
+    background: var(--onyx);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-300);
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+}
+
+.infomorebtn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 0 15px;
+    font-size: 13px;
+    color: var(--orange-yellow-crayola);
+    background: var(--border-gradient-onyx);
+    padding: 10px;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+    z-index: 1;
+}
+
+.infomorebtn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--bg-gradient-jet);
+    transition: var(--transition-1);
+    z-index: -1;
+}
+
+.infomorebtn:hover,
+.infomorebtn:focus { background: var(--bg-gradient-yellow-1); }
+
+.infomorebtn:hover::before,
+.infomorebtn:focus::before { background: var(--bg-gradient-yellow-2); }
+
+.infomorebtnbtn span { display: none; }
+
+.sidebarinfomore {
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-2);
+}
+
+.sidebar.active .sidebarinfomore {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contactslist {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.contactitem {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contactinfo {
+    max-width: calc(100% - 46px);
+    width: calc(100% - 46px);
+}
+
+.contacttitle {
+    color: var(--light-gray-70);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.contactinfo :is(.contactlink, time, address) {
+    color: var(--white-2);
+    font-size: var(--fs-7);
+}
+
+.contactinfo address { font-style: normal; }
+
+.sociallist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+}
+
+.socialitem .sociallink {
+    color: var(--light-gray-70);
+    font-size: 18px;
+}
+
+.socialitem .sociallink:hover { color: var(--light-gray); }
+
+  
+/*-----------------------------------*\
+    #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+* responsive larger than 450px screen
+*/
+
+@media (min-width: 450px) {
+    .sidebar {
+        max-height: 180px;
+        margin-bottom: 30px;
+    }
+
+    .sidebar.active {
+        max-height: 584px;
+    }
+
+    .sidebarinfo {
+        gap: 25px;
+    }
+
+    .avatarbox, .image {
+        width: 120px;
+    }
+
+    .infocontent .name {
+        margin-bottom: 15px;
+    }
+
+    .infocontent .title {
+        padding: 5px 18px;
+    }
+
+    .infomorebtn {
+        top: -30px;
+        right: -30px;
+        padding: 10px 15px;
+    }
+
+    .infomorebtn span {
+        display: block;
+        font-size: var(--fs-8);
+    }
+
+    .infomorebtn ion-icon {
+        display: none;
+    }
+
+    .separator {
+        margin: 32px 0;
+    }
+
+    .contactslist {
+        gap: 20px;
+    }
+
+    .contactinfo {
+        max-width: calc(100% - 64px);
+        width: calc(100% - 64px);
+    }
+}
+
+@media (min-width: 580px) {
+    .iconbox {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        font-size: 18px;
+    }
+}
+
+/**
+* responsive larger than 768px screen
+*/
+
+@media (min-width: 768px) {
+    .contacts-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+}
+
+/**
+* responsive larger than 1024px screen
+*/
+
+@media (min-width: 1024px) {
+    .sidebar {
+        position: sticky;
+        top: 60px;
+        max-height: max-content;
+        height: 100%;
+        margin-bottom: 0;
+        padding-top: 60px;
+        z-index: 1;
+    }
+
+    .sidebarinfo {
+        flex-direction: column;
+    }
+
+    .avatarbox, .image {
+        width: 150px;
+    }
+
+    .infocontent .name {
+    white-space: nowrap;
+    text-align: center;
+    }
+
+    .infocontent .title {
+        margin: auto;
+    }
+
+    .infomorebtn {
+        display: none;
+    }
+
+    .sidebarinfomore {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contactslist {
+        grid-template-columns: 1fr;
+    }
+
+    .contactinfo :is(.contactlink) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .contactinfo :is(.contactlink, time, address) {
+        --fs-7: 14px;
+        font-weight: var(--fw-300);
+    }
+
+    .separator:last-of-type {
+        margin: 15px 0;
+        opacity: 0;
+    }
+
+    .social-list {
+        justify-content: center;
+    }
+}
+
