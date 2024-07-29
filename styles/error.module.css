@@ -1,0 +1,63 @@
+/**
+* copyright 2024 @Dark-LYNN
+*/
+
+/*-----------------------------------*\
+    #404
+\*-----------------------------------*/
+
+.uwu {
+    margin-left: 25%;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.child {
+    margin-top: 1rem;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grandparent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.uncle {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.nephew {
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+@media (min-width: 768px ) {
+    .uwu{
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    .child {
+        margin-top: 4rem;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+    }
+}

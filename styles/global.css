@@ -1,5 +1,5 @@
 /*-----------------------------------*\
-  #style.css
+  #Global.css
 \*-----------------------------------*/
 
 /**
@@ -175,6 +175,10 @@ body { background: var(--smoky-black); }
 }
 
 .flex {
+  display: flex;
+}
+
+.flexgap {
   display: flex;
 }
 

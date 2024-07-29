@@ -60,6 +60,9 @@
 .image {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    max-height: 80px;
+    max-width: 80px;
+
 }
 .infocontent .name {
     color: var(--white-2);
@@ -80,6 +83,8 @@
 }
 
 .infomorebtn {
+    display: flex;
+    gap: 0.5rem;
     position: absolute;
     top: -15px;
     right: -15px;
@@ -232,6 +237,11 @@
         max-width: calc(100% - 64px);
         width: calc(100% - 64px);
     }
+    .image {
+        max-height: unset;
+        max-width: unset;    
+    }
+
 }
 
 @media (min-width: 580px) {
@@ -241,6 +251,7 @@
         border-radius: 12px;
         font-size: 18px;
     }
+    
 }
 
 /**

@@ -1,16 +1,18 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
-import Img from 'next/image';
+import Image from 'next/image';
+import Sidebar from '@/components/mainPage/sidebar';
+import Navbar from '@/components/mainPage/navbar';
+import styles from "@/styles/error.module.css";
 
 const Custom404 = () => {
-    const PaddingBottom: React.CSSProperties = {paddingBottom: "1rem"}
+    const PaddingBottom: React.CSSProperties = {}
     console.log("Rendering 404");
 
     return (
         <>
             <Script async src="https://www.googletagmanager.com/gtag/js?id=G-YSD2Q72W1H"/>
-
             <Head>
                 {/* Main */}
                 <title>404 - Page Not Found</title>
@@ -19,23 +21,34 @@ const Custom404 = () => {
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png" />
                 <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/android-chrome-512x512.png" />
-
                 {/* Meta tags */}
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-
-            {/* Your HTML content goes here */}
-            <div className="Notfound_container___vm_Q">
-                <Img style={PaddingBottom} width="500" height="500"src="https://cdn.lynnux.xyz/assets/svg/NotFound.svg" alt="not-found" className="Notfound_not-found-img__st0se" />
-
-                <h4 className="background-color: transparent;" style={PaddingBottom}>
-                    The page you{"'"}re looking for can{"'"}t be found.
-                </h4>
-                <button onClick={() => window.location.href='/'} className="Notfound_not-found-button__M59dr">Home</button>
-            </div>
-
-            <Script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
-        </>
+            <main>
+                <Sidebar />
+                <div className="main-content">
+                    <Navbar currentHash={""}/>
+                    <article className="404 active" data-page="resume">
+                        <div className={styles.grandparent}>
+                            <div className={styles.parent}>
+                                <div className={styles.child}>
+                                    <Image draggable={false} className={styles.image} width="400" height="250"src="https://cdn.lynnux.xyz/assets/svg/NotFound.svg" alt="not-found" />
+                                </div>
+                            </div>
+                            <div className={styles.uncle}>
+                                <h4 style={{color:"#fff"}}>The page you{"'"}re looking for can{"'"}t be found.</h4>
+                                <button onClick={() => window.location.href='/'}  className={`form-btn ${styles.uwu}`}>
+                                    <div className='flex'>
+                                        <Image draggable="false" className='send-icon' src="/assets/svg/home.svg" alt="Book icon" width={25} height={25}/>
+                                        <span> Home</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+            </>
     );
 }
 
