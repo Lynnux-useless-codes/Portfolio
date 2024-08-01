@@ -15,7 +15,7 @@ function App({ Component, pageProps }: AppProps) {
 
     const mainDescription = "Hi there i'm lynn and i am a passionate Discord bot developer and website developer with experience in various programming languages such as Python, JavaScript, and HTML/CSS. I love creating new projects and bringing ideas to life through code or art. I'm constantly learning and exploring new technologies to improve my skills and provide better solutions for my users. I believe that good communication and attention to detail are essential in creating successful projects. Let's work together to create something amazing!"
     const noHelloDescription = "In digital communication, it's more efficient to ask your question right away instead of using polite but time-consuming greetings or inquiries. This allows for faster responses and asynchronous communication, making everyone happier and more productive."
-    const imageOfCodeDescription = "Description specific to the Image of Code page.";
+    const imageOfCodeDescription = "An image of your code is not helpful. When asking a question about a problem with code, people who are volunteering to help need the text of the code. Images of the code are not an acceptable substitute.";
 
     const router = useRouter();
     const isNoHelloPage = router.pathname === '/helper/nohello';
@@ -27,7 +27,7 @@ function App({ Component, pageProps }: AppProps) {
             {isNoHelloPage ? (
                     <>
                         <title>NoHello | Lynnux</title>
-                        <meta property="og:title" content={title} />
+                        <meta property="og:title" content="No Hello" />
                         <link rel="canonical" href={canonical} />
                         <meta property="og:site_name" content={canonical} />
                         <meta property="og:description" content={noHelloDescription} />
@@ -71,6 +71,8 @@ function App({ Component, pageProps }: AppProps) {
                         <meta property="og:description" content={mainDescription} />
                         <meta property="og:image" content="./assets/images/favicon.png"/>
                         <meta property="og:image:secure_url" content="https://lynnux.xyz/assets/images/favicon.png"/>
+                        <meta name="theme-color" content="#ff47ff" />
+
                     </>
                 )}
 

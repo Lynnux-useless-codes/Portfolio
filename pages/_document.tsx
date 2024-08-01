@@ -11,7 +11,6 @@ class MyDocument extends Document {
                     <meta name="author" content="Lynnux" />
 
                     {/* Embedding */}
-                    <meta name="theme-color" content="#ff47ff" />
                     <meta property="og:type" content="website" />
                     <meta property="og:image" content="/assets/favicon.png" />
                     <meta property="og:image:secure_url" content="/assets/favicon.png" />
