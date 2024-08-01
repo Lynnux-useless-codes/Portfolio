@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
     const mainDescription = "Hi there i'm lynn and i am a passionate Discord bot developer and website developer with experience in various programming languages such as Python, JavaScript, and HTML/CSS. I love creating new projects and bringing ideas to life through code or art. I'm constantly learning and exploring new technologies to improve my skills and provide better solutions for my users. I believe that good communication and attention to detail are essential in creating successful projects. Let's work together to create something amazing!"
     const noHelloDescription = "In digital communication, it's more efficient to ask your question right away instead of using polite but time-consuming greetings or inquiries. This allows for faster responses and asynchronous communication, making everyone happier and more productive."
     const imageOfCodeDescription = "An image of your code is not helpful. When asking a question about a problem with code, people who are volunteering to help need the text of the code. Images of the code are not an acceptable substitute.";
-    const dontAskDescription = "Dont ask";
+    const dontAskDescription = "Asking questions without stating the problem is bad form and can discourage knowledgeable individuals from responding. The solution is to directly ask the specific question or problem with relevant details, rather than asking if someone is available. Clear and well-formulated questions are essential for effective communication in online communities";
 
     const router = useRouter();
     const isNoHelloPage = router.pathname === '/helper/nohello';
