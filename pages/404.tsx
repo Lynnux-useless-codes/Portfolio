@@ -8,7 +8,6 @@ import styles from "@/styles/error.module.css";
 
 const Custom404 = () => {
     const PaddingBottom: React.CSSProperties = {}
-    console.log("Rendering 404");
 
     return (
         <>
@@ -32,11 +31,11 @@ const Custom404 = () => {
                         <div className={styles.grandparent}>
                             <div className={styles.parent}>
                                 <div className={styles.child}>
-                                    <Image draggable={false} className={styles.image} width="400" height="250"src="https://cdn.lynnux.xyz/assets/svg/NotFound.svg" alt="not-found" />
+                                    <Image draggable={false} className={styles.image} width="400" height="250"src="/assets/svg/NotFound.svg" alt="not-found" />
                                 </div>
                             </div>
                             <div className={styles.uncle}>
-                                <h4 style={{color:"#fff"}}>The page you{"'"}re looking for can{"'"}t be found.</h4>
+                                <h4 className="error-main">The page you{"'"}re looking for can{"'"}t be found.</h4>
                                 <button onClick={() => window.location.href='/'}  className={`form-btn ${styles.uwu}`}>
                                     <div className='flex'>
                                         <Image draggable="false" className='send-icon' src="/assets/svg/home.svg" alt="Book icon" width={25} height={25}/>

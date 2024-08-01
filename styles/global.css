@@ -1170,3 +1170,40 @@ article.active {
 }
 
 
+
+/*-----------------------------------*\
+  #nohelp
+\*-----------------------------------*/
+
+.fulliframe {
+  width: 100%;
+  height: 80vh;
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: unset;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+@media (min-width: 580) {
+  .fulliframe {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024) {
+  .fulliframe {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1250) {
+  .fulliframe {
+    height: 100%;
+  }
+}
+
+.error-main {
+  color:var(--white-2) !important
+}

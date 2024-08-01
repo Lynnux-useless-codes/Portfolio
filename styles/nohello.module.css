@@ -1,0 +1,43 @@
+
+/*-----------------------------------*\
+    #NoHello.css
+\*-----------------------------------*/
+
+.name {
+    font-size: 94px;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    height: auto;
+    margin: 60px auto;
+}
+
+.hero {
+    margin: 150px auto 200px auto;
+    position: relative;
+}
+
+/*  Typing Effect   */
+.typedcursor{
+    opacity: 1;
+}
+
+.typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+}
+
+@-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+}
