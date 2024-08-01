@@ -1,0 +1,70 @@
+/*
+ * copyright 2024 @Dark-LYNN
+ */
+
+/*-----------------------------------*\
+  #DontAskToAsk
+\*-----------------------------------*/
+
+.body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0 auto;
+    max-width: unset;
+    line-height: 1.6;
+    font-size: 18px;
+    color: var(--white-1);
+    padding: 0 10px;
+    font-family: "Open Sans";
+}
+
+.main {
+    padding: 1.5rem 3.5rem 0rem 3.5rem;
+    color: var(--light);
+    display: block;
+}
+
+.headerone, .headertwo {
+    line-height: 1.2;
+}
+
+.blockquote {
+    background: #141414;
+    color: #C0C0C0;
+    border-left-color: #000000;
+    display: table;
+    border-left: 10px solid var(--orange-yellow-crayola);;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    font-family: monospace;
+}
+.blockquote > .name {
+    padding-right: 8px;
+    color: #fff;
+}
+
+.blockquote > * {
+    display: table-cell;
+}
+
+
+
+@media (max-width: 600px) {
+    .blockquote {
+        background: #1414141a;
+        color: #c0c0c0;
+        border-left-color: #000000;
+        display: unset;
+        border-left: unset;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        font-family: monospace;
+    }
+    .blockquote > * {
+        display: block;
+    }
+    .main {
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+    }
+}
