@@ -52,7 +52,12 @@
 
 
 .code {
-    font-size: large;
+    font-size: xx-small;
+}
+
+.precode {
+    overflow: hidden;
+
 }
 
 .highlighterrouge {
