@@ -56,7 +56,7 @@
 }
 
 .precode {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .highlighterrouge {

@@ -18,7 +18,7 @@ public static int Calculate(string digits)
 }`;
 
     return (
-        <pre className='precode'>
+        <pre className={styles.precode}>
             <code dangerouslySetInnerHTML={{ __html: codeString }} className={styles.code} />
         </pre>
     );
