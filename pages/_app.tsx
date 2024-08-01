@@ -16,10 +16,12 @@ function App({ Component, pageProps }: AppProps) {
     const mainDescription = "Hi there i'm lynn and i am a passionate Discord bot developer and website developer with experience in various programming languages such as Python, JavaScript, and HTML/CSS. I love creating new projects and bringing ideas to life through code or art. I'm constantly learning and exploring new technologies to improve my skills and provide better solutions for my users. I believe that good communication and attention to detail are essential in creating successful projects. Let's work together to create something amazing!"
     const noHelloDescription = "In digital communication, it's more efficient to ask your question right away instead of using polite but time-consuming greetings or inquiries. This allows for faster responses and asynchronous communication, making everyone happier and more productive."
     const imageOfCodeDescription = "An image of your code is not helpful. When asking a question about a problem with code, people who are volunteering to help need the text of the code. Images of the code are not an acceptable substitute.";
+    const dontAskDescription = "Dont ask";
 
     const router = useRouter();
     const isNoHelloPage = router.pathname === '/helper/nohello';
     const isImageOfCodePage = router.pathname === '/helper/imageofcode';
+    const isDontAskToAsk = router.pathname === '/helper/dontasktoask';
 
     return (
         <>
@@ -47,12 +49,28 @@ function App({ Component, pageProps }: AppProps) {
                         <link rel="canonical" href={canonical} />
 
                         <meta name="description" content={imageOfCodeDescription} />
-
                         <meta property="og:site_name" content="https://lynnux.xyz/" />
                         <meta property="og:title" content="An image of your code is not helpful" />
                         <meta property="og:description" content={imageOfCodeDescription} />
                         <meta property="og:url" content="https://lynnux.xyz/helper/imageofcode" />
                         <meta property="og:type" content="website" />
+                        <meta name="theme-color" content="#ffffff" />
+                    </>
+                ) : isDontAskToAsk ? (
+                    <>
+                        <title>Dont Ask To Ask | Lynnux</title>
+                        <meta property="og:title" content="Dont Ask To Ask" />
+                        <link rel="canonical" href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={dontAskDescription} />
+                        <meta name="description" content={dontAskDescription} />
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="Dont Ask To Ask" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={dontAskDescription}/>
                         <meta name="theme-color" content="#ffffff" />
                     </>
                 ) : (
