@@ -55,10 +55,6 @@
     font-size: xx-small;
 }
 
-.precode {
-    overflow: hidden !important;
-}
-
 .highlighterrouge {
     border: 1px solid var(--jet);
     border-radius: 20px;
@@ -78,8 +74,15 @@
     }
 }
 
-
+@media (max-width: 767px) {
+    .precode {
+        overflow: hidden !important;
+    }
+}
 @media (min-width: 768px) {
+    .precode {
+        overflow: unset !important;
+    }
     .content {
         margin:1em
     }
