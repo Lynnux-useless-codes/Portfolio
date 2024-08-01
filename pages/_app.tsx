@@ -15,13 +15,16 @@ function App({ Component, pageProps }: AppProps) {
 
     const mainDescription = "Hi there i'm lynn and i am a passionate Discord bot developer and website developer with experience in various programming languages such as Python, JavaScript, and HTML/CSS. I love creating new projects and bringing ideas to life through code or art. I'm constantly learning and exploring new technologies to improve my skills and provide better solutions for my users. I believe that good communication and attention to detail are essential in creating successful projects. Let's work together to create something amazing!"
     const noHelloDescription = "In digital communication, it's more efficient to ask your question right away instead of using polite but time-consuming greetings or inquiries. This allows for faster responses and asynchronous communication, making everyone happier and more productive."
+    const imageOfCodeDescription = "Description specific to the Image of Code page.";
 
     const router = useRouter();
-    const isNoHeloPage = router.pathname === '/helper/nohello';
+    const isNoHelloPage = router.pathname === '/helper/nohello';
+    const isImageOfCodePage = router.pathname === '/helper/imageofcode';
+
     return (
         <>
             <Head>
-            {isNoHeloPage ? (
+            {isNoHelloPage ? (
                     <>
                         <title>NoHello | Lynnux</title>
                         <meta property="og:title" content={title} />
@@ -33,9 +36,23 @@ function App({ Component, pageProps }: AppProps) {
                         {/* Discord Embed */}
                         <meta property="og:site_name" content="https://lynnux.xyz/" />
                         <meta property="og:title" content="no hello" />
-                        <meta property="og:url" content="https://lynnux.xyz/helper/nohello" />
+                        <meta property="og:url" content={canonical} />
                         <meta property="og:type" content="website" />
                         <meta property="og:description" content={noHelloDescription}/>
+                        <meta name="theme-color" content="#ffffff" />
+                    </>
+                ) : isImageOfCodePage ? (
+                    <>
+                        <title>Image of Code | Lynnux</title>
+                        <link rel="canonical" href={canonical} />
+
+                        <meta name="description" content={imageOfCodeDescription} />
+
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="An image of your code is not helpful" />
+                        <meta property="og:description" content={imageOfCodeDescription} />
+                        <meta property="og:url" content="https://lynnux.xyz/helper/imageofcode" />
+                        <meta property="og:type" content="website" />
                         <meta name="theme-color" content="#ffffff" />
                     </>
                 ) : (
