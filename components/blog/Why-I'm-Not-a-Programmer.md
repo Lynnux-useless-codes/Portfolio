@@ -1,5 +1,5 @@
 ---
-title: "Why I'm Not a Programmer (Even Tho I Can Code)"
+title: "Why I'm Not a Programmer"
 date: "2024-08-30"
 ---
 
