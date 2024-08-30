@@ -1,6 +1,6 @@
 ---
 title: "Art Commissions"
-date: "2022-06-10"
+date: "2022-10-06"
 ---
 
 ## Why I've Decided To Step Away

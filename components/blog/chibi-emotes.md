@@ -1,6 +1,6 @@
 ---
 title: "Chibi Emotes"
-date: "2023-23-02"
+date: "2023-02-23"
 ---
 
 <section class="blog-image-section">
