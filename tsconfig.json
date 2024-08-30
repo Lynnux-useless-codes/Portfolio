@@ -24,7 +24,6 @@
     "target": "ES6",
     "types": [],
     "typeRoots": ["./node_modules/@types", "./types"]
-
   },
   "include": [
     ".next/types/**/*.ts",

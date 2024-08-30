@@ -1,5 +1,13 @@
 [
     {
+        "title": "Why I'm Not a Programmer (Even Tho I Can Code)",
+        "category": "Personal",
+        "url": "./blog/Why-I'm-Not-a-Programmer",
+        "imageUrl": "./assets/images/Not-A-Programmer.webp",
+        "date": "2024-08-30",
+        "description": "When people find out that I’ve. Click for more info."
+    },
+    {
         "title": "Chibi Emote's",
         "category": "Design",
         "url": "./blog/chibi-emotes",

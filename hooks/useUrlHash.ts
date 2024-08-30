@@ -16,7 +16,7 @@ export function useUrlHash(): string | null {
   }, [forceUpdate]);
 
   if (typeof window === "undefined") {
-    return null; // Return `null` while server-side
+    return null;
   }
 
   return window.location.hash.split("#")[1] || "about";

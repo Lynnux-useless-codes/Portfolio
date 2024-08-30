@@ -6,7 +6,6 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ currentHash }) => {
-    // Determine which link should be active based on the currentHash
     const getActiveClass = (hash: string) => {
         return currentHash === hash ? styles.active : '';
     };
