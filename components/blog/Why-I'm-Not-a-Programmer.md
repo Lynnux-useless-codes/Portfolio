@@ -1,6 +1,6 @@
 ---
 title: "Not a Programmer"
-date: "2024-08-30"
+date: "2024-30-08"
 ---
 
 ## Why I'm Not a Programmer (Even Tho I Can Code)

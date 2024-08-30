@@ -1,10 +1,10 @@
 [
     {
-        "title": "Why I'm Not a Programmer (Even Tho I Can Code)",
+        "title": "Why I'm Not a Programmer",
         "category": "Personal",
         "url": "./blog/Why-I'm-Not-a-Programmer",
         "imageUrl": "./assets/images/Not-A-Programmer.webp",
-        "date": "2024-08-30",
+        "date": "2024-30-08",
         "description": "When people find out that I’ve. Click for more info."
     },
     {
@@ -12,7 +12,7 @@
         "category": "Design",
         "url": "./blog/chibi-emotes",
         "imageUrl": "./assets/images/Kiriko-3.webp",
-        "date": "2023-02-23",
+        "date": "2023-23-02",
         "description": "All chibi emote's are free to use. Click for more info."
     },
     {
@@ -20,7 +20,7 @@
         "category": "Personal",
         "url": "./blog/commissions",
         "imageUrl": "./assets/images/Commisions.webp",
-        "date": "2022-10-06",
+        "date": "2022-06-10",
         "description": "Why I've Decided to Step Away. Click for more info."
     }
 ]
