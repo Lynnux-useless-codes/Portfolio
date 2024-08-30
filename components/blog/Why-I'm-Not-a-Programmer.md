@@ -1,5 +1,5 @@
 ---
-title: "I'm Not a Programmer"
+title: "Not a Programmer"
 date: "2024-08-30"
 ---
 
