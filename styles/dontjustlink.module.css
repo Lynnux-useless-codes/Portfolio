@@ -1,0 +1,34 @@
+.main {
+  padding-top: 1rem;
+  color: white;
+}
+
+.text {
+  padding-top: 0.5rem;
+}
+
+.ul {
+  padding-top: 1rem;
+}
+
+.li {
+  padding-top: 0.4rem;
+}
+
+.text2 {
+  padding-top: 1.3rem;
+}
+
+#introduction {
+  font-weight: 900;
+  font-size: 200%;
+}
+
+.text2 {
+  font-family: 550;
+  font-size: 125%;
+}
+
+.list {
+  padding-left: 0.6rem;
+}
