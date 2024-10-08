@@ -16,7 +16,7 @@ const projects: Project[] = [
     { title: "Akira Website", category: "web development", url: "https://akira.lynnux.xyz", image: "/assets/images/akirasite.png", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Emote's", category: "art designs", url: "https://lynnux.xyz/emotes", image: "/assets/images/Mercy.webp", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "OverwatchAimbot.com", category: "web development", url: "https://overwatchaimbot.com", image: "/assets/images/overwatchaimbot.png", blurImage: "/assets/images/Placeholder.jpg" },
-    { title: "Crossworld Connections", category: "game development", url: "https://store.steampowered.com/developer/Lynnux", image: "https://cdn.lynnux.xyz/images/CrossworldConnections.webp", blurImage: "/assets/images/Placeholder.jpg" },
+    { title: "Crossworld Connections", category: "game development", url: "https://store.steampowered.com/developer/Lynnux", image: "/assets/images/crossworld connections.png", blurImage: "/assets/images/Placeholder.jpg" },
 ];
 
 export default function Portfolio() {
