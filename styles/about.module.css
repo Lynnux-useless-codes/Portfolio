@@ -40,5 +40,9 @@
 }
 
 .credits {
-    color: #ffffff10;
+    color: #ffffff20;
+}
+
+.credits:hover {
+    color: var(--orange-yellow-crayola);
 }
