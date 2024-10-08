@@ -12,9 +12,9 @@ interface Project {
 }
 
 const projects: Project[] = [
-    { title: "Akira", category: "applications", url: "https://discord.com/application-directory/738057910923296839", image: "/assets/images/akirasite.png", blurImage: "/assets/images/Placeholder.jpg" },
+    { title: "Akira", category: "applications", url: "https://discord.com/application-directory/738057910923296839", image: "/assets/images/akira.png", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Akira Website", category: "web development", url: "https://akira.lynnux.xyz", image: "/assets/images/akirasite.png", blurImage: "/assets/images/Placeholder.jpg" },
-    { title: "Emote's", category: "art designs", url: "https://lynnux.xyz/emotes", image: "https://cdn.lynnux.xyz/images/EmotesSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
+    { title: "Emote's", category: "art designs", url: "https://lynnux.xyz/emotes", image: "/assets/images/Mercy.webp", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "OverwatchAimbot.com", category: "web development", url: "https://overwatchaimbot.com", image: "/assets/images/overwatchaimbot.png", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Crossworld Connections", category: "game development", url: "https://store.steampowered.com/developer/Lynnux", image: "https://cdn.lynnux.xyz/images/CrossworldConnections.webp", blurImage: "/assets/images/Placeholder.jpg" },
 ];
