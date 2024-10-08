@@ -29,6 +29,8 @@ export default function About() {
           <Testimonials/>
             {/* CLIENTS */}
           <Clients/>
+          <br/>
+          <Link className={styles.credits} href={'/credits'}>Site Credits</Link>
         </article>
     );
 }

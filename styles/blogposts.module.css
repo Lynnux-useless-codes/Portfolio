@@ -29,3 +29,31 @@
 .blog-post section {
     line-height: 1.6;
 }
+
+
+
+/*
+ * Credits Page
+*/
+
+.CreditsListItem, .CreditsList {
+    list-style: circle !important;
+    color: white;
+    padding-left: 1rem;
+}
+
+.CreditsLink {
+    color: #FAD96F;
+    text-decoration: underline;
+    text-decoration-color: #FAD96F63;
+    font-weight: 900;
+}
+
+.linkNoCredit {
+    font-weight: 700;
+    color: white;
+}
+
+.showTogether {
+    display: ruby;
+}
