@@ -15,7 +15,7 @@ const projects: Project[] = [
     { title: "Akira", category: "applications", url: "https://discord.com/application-directory/738057910923296839", image: "https://cdn.lynnux.xyz/images/Akira-App-Directory.png", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Akira Website", category: "web development", url: "https://akira.lynnux.xyz", image: "https://cdn.lynnux.xyz/images/AkiraSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Emote's", category: "art designs", url: "https://lynnux.xyz/emotes", image: "https://cdn.lynnux.xyz/images/EmotesSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
-    { title: "OverwatchAimbot.com", category: "web development", url: "https://overwatchaimbot.com", image: "https://cdn.lynnux.xyz/images/OWAimbotSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
+    { title: "OverwatchAimbot.com", category: "web development", url: "https://overwatchaimbot.com", image: "/assets/images/overwatchaimbot.png", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Discord ColoredText Generator", category: "web development", url: "./helper/discord/coloredtext/", image: "https://cdn.lynnux.xyz/images/ColorTextSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Discord Timestamp Generator", category: "web development", url: "./helper/discord/timestamp/", image: "https://cdn.lynnux.xyz/images/timestampSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Discord Webhook Sender", category: "web development", url: "./helper/discord/webhook/", image: "https://cdn.lynnux.xyz/images/webhookSitePreview.webp", blurImage: "/assets/images/Placeholder.jpg" },
