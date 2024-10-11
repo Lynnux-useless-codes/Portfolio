@@ -16,7 +16,7 @@ const projects: Project[] = [
   { title: "No Image Of Code", category: "Webpage", url: "./helper/imageofcode", image: "/assets/images/codeImage2.webp", blurImage: "/assets/images/Placeholder.jpg" },
   { title: "Dont Ask to Ask", category: "Webpage", url: "./helper/dontasktoask", image: "/assets/images/dontasktoask.webp", blurImage: "/assets/images/Placeholder.jpg" },
   { title: "Dont just link", category: "Webpage", url: "./helper/dontjustlink", image: "/assets/images/dontjustlink.webp", blurImage: "/assets/images/Placeholder.jpg" },
-  { title: "Timers", category: "Webpage", url: "./helper/timers", image: "/assets/images/dontjustlink.webp", blurImage: "/assets/images/Placeholder.jpg" },
+  { title: "Timers", category: "Webpage", url: "./helper/timers", image: "/assets/images/clock.png", blurImage: "/assets/images/Placeholder.jpg" },
 ];
 
 export default function Portfolio() {
