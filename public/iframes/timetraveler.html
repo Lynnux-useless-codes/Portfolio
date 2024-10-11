@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countup Timer</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Discord Embed -->
+    <meta property="og:site_name" content="https://lynnux.xyz/overwatch/timer" />
+    <meta property="og:title" content="Lynnux - timetraveler Timer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This timer was started to help timetraveler how far they traveled (only works after June 20 2024 at 6.23pm EST)." />
+    <meta property="og:image" content="./assets/images/favicon.png">
+    <meta property="og:image:secure_url" content="https://lynnux.xyz/assets/images/favicon.png">
+    <meta name="p:domain_verify" content="8c72dddc235011ec65f54fc3e0fcc7ad"/>
+    <meta name="theme-color" content="#64C6FF">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon"/>
+    
+</head>
+<body>
+    <div class="vertical_grid">
+        <div id="countdown_text" class="countdown-container">
+            <h1 id="headerText" class="title">This timer was started:</h1>
+            <div id="countdown"></div>
+        </div>
+        <div class="controls">
+            <div class="color-pickers">
+                <label for="backgroundColorPicker">Choose Background Color</label>
+                <input type="color" id="backgroundColorPicker" value="#00FF00">
+                <label for="textColorPicker">Choose Text Color</label>
+                <input type="color" id="textColorPicker" value="#000000">
+            </div>
+            <div class="font-selectors">
+                <label for="headerFontPicker">Choose Header Font</label>
+                <select id="headerFontPicker">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                </select>
+                <label for="countdownFontPicker">Choose Countdown Font</label>
+                <select id="countdownFontPicker">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="./timetraveler.js"></script>
+</body>
+</html>

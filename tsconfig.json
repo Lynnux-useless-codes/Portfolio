@@ -32,6 +32,6 @@
     "**/*.ts",
     "src/**/*",
     "sw.ts"
-  ],
+, "public/iframes/twitchcon.js"  ],
   "exclude": ["node_modules"]
 }

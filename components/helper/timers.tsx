@@ -12,11 +12,9 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { title: "No Hello", category: "Webpage", url: "./helper/nohello", image: "/assets/images/nohello.webp", blurImage: "/assets/images/Placeholder.jpg" },
-  { title: "No Image Of Code", category: "Webpage", url: "./helper/imageofcode", image: "/assets/images/codeImage2.webp", blurImage: "/assets/images/Placeholder.jpg" },
-  { title: "Dont Ask to Ask", category: "Webpage", url: "./helper/dontasktoask", image: "/assets/images/dontasktoask.webp", blurImage: "/assets/images/Placeholder.jpg" },
-  { title: "Dont just link", category: "Webpage", url: "./helper/dontjustlink", image: "/assets/images/dontjustlink.webp", blurImage: "/assets/images/Placeholder.jpg" },
-  { title: "Timers", category: "Webpage", url: "./helper/timers", image: "/assets/images/dontjustlink.webp", blurImage: "/assets/images/Placeholder.jpg" },
+  { title: "Overwatch Next Season Timer", category: "Webpage", url: "./timers/overwatch", image: "/assets/images/overwatch_timer.png", blurImage: "/assets/images/Placeholder.jpg" },
+  { title: "Timetraveler Timer", category: "Webpage", url: "./timers/timetraveler", image: "/assets/images/clock.png", blurImage: "/assets/images/Placeholder.jpg" },
+  { title: "TwitchCon Timer", category: "Webpage", url: "./timers/twitchcon", image: "/assets/images/twitchcon.png", blurImage: "/assets/images/Placeholder.jpg" },
 ];
 
 export default function Portfolio() {
@@ -34,7 +32,7 @@ export default function Portfolio() {
   return (
     <article className="portfolio active" data-page="portfolio">
       <header>
-        <h2 className="h2 article-title">Helpers</h2>
+        <h2 className="h2 article-title">Timers</h2>
       </header>
         <section className={styles.projects}>
           <ul className={`${styles.projectlist} project-list`}>
