@@ -23,7 +23,7 @@ function App({ Component, pageProps }: AppProps) {
     const isNoHelloPage = router.pathname === '/helper/nohello';
     const isImageOfCodePage = router.pathname === '/helper/imageofcode';
     const isDontAskToAsk = router.pathname === '/helper/dontasktoask';
-    const isBlogNotDev = router.pathname === "/blog/Why-I'm-Not-a-Programmer";
+    const isBlogNotDev = router.pathname === '/blog/Why-I%27m-Not-a-Programmer';
 
     return (
         <>
