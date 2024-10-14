@@ -60,13 +60,27 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    let countdownString = '';
+
+    if (days > 0) {
+        countdownString += days + "d ";
+    }
+    if (hours > 0 || days > 0) {
+        countdownString += hours + "h ";
+    }
+    if (minutes > 0 || hours > 0 || days > 0) {
+        countdownString += minutes + "m ";
+    }
+    countdownString += seconds + "s";
+
+    document.getElementById("countdown").innerHTML = countdownString;
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        document.getElementById("countdown").innerHTML = "Season 13 Active";
     }
 }
+
 
 function updateTextShadow(textColor) {
     const rgb = textColor.match(/\d+/g);
