@@ -18,12 +18,18 @@ function App({ Component, pageProps }: AppProps) {
     const imageOfCodeDescription = "An image of your code is not helpful. When asking a question about a problem with code, people who are volunteering to help need the text of the code. Images of the code are not an acceptable substitute.";
     const dontAskDescription = "Asking questions without stating the problem is bad form and can discourage knowledgeable individuals from responding. The solution is to directly ask the specific question or problem with relevant details, rather than asking if someone is available. Clear and well-formulated questions are essential for effective communication in online communities";
     const blogNotDevDescription = "I know a bit of coding but don’t consider myself a programmer. Coding is a fun hobby, like digital DIY projects, not something I want to pursue as a career. It’s a way for me to get creative, solve small problems, and add a personal touch to my online spaces.";
+    const timetravlerTimerDescription = "This timer was started to help timetraveler how far they traveled (only works after June 20 2024 at 6.23pm EST).";
+    const overwatchTimerDescription = "A Timer for the next overwatch season, with a default green background so you can chromakey it in obs. \nP.S. add '?overlay=hide' at the end of the url to remove the overlay.";
+    const twitchconTimerDescription = "A Timer for the next twitchcon, with a default green background so you can chromakey it in obs. \nP.S. add '?overlay=hide' at the end of the url to remove the overlay."
 
     const router = useRouter();
     const isNoHelloPage = router.pathname === '/helper/nohello';
     const isImageOfCodePage = router.pathname === '/helper/imageofcode';
     const isDontAskToAsk = router.pathname === '/helper/dontasktoask';
     const isBlogNotDev = router.asPath === "/blog/Why-I'm-Not-a-Programmer";
+    const isTimetravlerTimer = router.pathname === '/helper/timers/timetraveler';
+    const isOverwatchTimer = router.pathname === '/helper/timers/overwatch';
+    const isTwitchconTimer = router.pathname === '/helper/timers/twitchcon';
 
     return (
         <>
@@ -90,6 +96,57 @@ function App({ Component, pageProps }: AppProps) {
                         <meta property="og:url" content={canonical} />
                         <meta property="og:type" content="website" />
                         <meta property="og:description" content={blogNotDevDescription}/>
+                        <meta name="theme-color" content="#ff47ff" />
+                    </>
+                ) : isTimetravlerTimer ? (
+                    <>
+                        <title>Timer | Lynnux</title>
+                        <meta property="og:title" content="Timetravler Timer" />
+                        <link rel="canonical" href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={timetravlerTimerDescription} />
+                        <meta name="description" content={timetravlerTimerDescription} />
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="Timetravler Timer | Lynnux" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={timetravlerTimerDescription}/>
+                        <meta name="theme-color" content="#ff47ff" />
+                    </>
+                ) : isOverwatchTimer ? (
+                    <>
+                        <title>Overwatch Timer | Lynnux</title>
+                        <meta property="og:title" content="Overwatch Timer" />
+                        <link rel="canonical" href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={overwatchTimerDescription} />
+                        <meta name="description" content={overwatchTimerDescription} />
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="Overwatch Next Season Timer" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={overwatchTimerDescription}/>
+                        <meta name="theme-color" content="#ff47ff" />
+                    </>
+                ) : isTwitchconTimer ? (
+                    <>
+                        <title>Twitchcon Timer | Lynnux</title>
+                        <meta property="og:title" content="Twitchcon Timer" />
+                        <link rel="canonical" href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={twitchconTimerDescription} />
+                        <meta name="description" content={twitchconTimerDescription} />
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="TwitchCon Timer" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={twitchconTimerDescription}/>
                         <meta name="theme-color" content="#ff47ff" />
                     </>
                 ) : (
