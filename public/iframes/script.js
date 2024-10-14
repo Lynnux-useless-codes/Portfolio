@@ -62,7 +62,7 @@ function updateCountdown() {
 
     let countdownString = '';
 
-    if (days > 0) {
+    if (days > 0) { 
         countdownString += days + "d ";
     }
     if (hours > 0 || days > 0) {
