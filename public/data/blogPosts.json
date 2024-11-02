@@ -1,5 +1,13 @@
 [
     {
+        "title": "My Online Presence",
+        "category": "Personal",
+        "url": "./blog/my_online_presence",
+        "imageUrl": "./assets/images/my_online_presence.png",
+        "date": "2024-11-02",
+        "description": "One question I get a lot is... Click for more info."
+    },
+    {
         "title": "Why I'm Not a Programmer",
         "category": "Personal",
         "url": "./blog/Why-I'm-Not-a-Programmer",
