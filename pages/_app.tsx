@@ -17,21 +17,27 @@ function App({ Component, pageProps }: AppProps) {
     const noHelloDescription = "In digital communication, it's more efficient to ask your question right away instead of using polite but time-consuming greetings or inquiries. This allows for faster responses and asynchronous communication, making everyone happier and more productive."
     const imageOfCodeDescription = "An image of your code is not helpful. When asking a question about a problem with code, people who are volunteering to help need the text of the code. Images of the code are not an acceptable substitute.";
     const dontAskDescription = "Asking questions without stating the problem is bad form and can discourage knowledgeable individuals from responding. The solution is to directly ask the specific question or problem with relevant details, rather than asking if someone is available. Clear and well-formulated questions are essential for effective communication in online communities";
-    const blogNotDevDescription = "I know a bit of coding but don’t consider myself a programmer. Coding is a fun hobby, like digital DIY projects, not something I want to pursue as a career. It’s a way for me to get creative, solve small problems, and add a personal touch to my online spaces.";
     const timetravlerTimerDescription = "This timer was started to help timetraveler how far they traveled (only works after June 20 2024 at 6.23pm EST).";
     const overwatchTimerDescription = "A Timer for the next overwatch season, with a default green background so you can chromakey it in obs. \nP.S. add '?overlay=hide' at the end of the url to remove the overlay.";
     const twitchconTimerDescription = "A Timer for the next twitchcon, with a default green background so you can chromakey it in obs. \nP.S. add '?overlay=hide' at the end of the url to remove the overlay."
+    // Blog Descriptions
+    const blogNotDevDescription = "I know a bit of coding but don’t consider myself a programmer. Coding is a fun hobby, like digital DIY projects, not something I want to pursue as a career. It’s a way for me to get creative, solve small problems, and add a personal touch to my online spaces.";
     const BlogPostUnspokenRules = "If you’ve ever wondered, “How do I best interact with this person?” you’re not alone! I thought I’d save us all some time by laying out the unspoken rules for interacting with me online. Think of this as a casual guide to avoid any awkward moments and to keep things fun and easygoing between us."
+    const blogPostMyOnlinePresence = "One question I get a lot is, “What’s up with your pronouns?” If you’ve seen my profile, you might have noticed I go by \"any normative\" pronouns. But what exactly does that mean? This blog post is here to explain what that term means for me, why I choose it, and how I see my online presence and identity."
+    const blogPostInteractingWithMe = "Living with multiple mental health conditions, including Bipolar II, ADHD, dyslexia, and Seasonal Affective Disorder (SAD), has a significant influence on how I interact with others online. These diagnoses aren’t just labels—they each come with their own set of challenges that shape my energy, focus, and ability to engage with others."
 
     const router = useRouter();
     const isNoHelloPage = router.pathname === '/helper/nohello';
     const isImageOfCodePage = router.pathname === '/helper/imageofcode';
     const isDontAskToAsk = router.pathname === '/helper/dontasktoask';
-    const isBlogNotDev = router.asPath === "/blog/Why-I'm-Not-a-Programmer";
-    const isBlogUnspokenRules = router.asPath === "/blog/unspoken_rules";
     const isTimetravlerTimer = router.pathname === '/helper/timers/timetraveler';
     const isOverwatchTimer = router.pathname === '/helper/timers/overwatch';
     const isTwitchconTimer = router.pathname === '/helper/timers/twitchcon';
+    // Blog Routers
+    const isBlogNotDev = router.asPath === "/blog/Why-I'm-Not-a-Programmer";
+    const isBlogUnspokenRules = router.asPath === "/blog/unspoken_rules";
+    const isBlogMyOnlinePresence = router.asPath === "/blog/my_online_presence";
+    const isBlogInteractingWithMe = router.asPath === "/blog/interacting_with_me";
 
     return (
         <>
@@ -166,6 +172,40 @@ function App({ Component, pageProps }: AppProps) {
                         <meta property="og:url" content={canonical} />
                         <meta property="og:type" content="website" />
                         <meta property="og:description" content={BlogPostUnspokenRules}/>
+                        <meta name="theme-color" content="#ff47ff" />
+                    </>
+                ) : isBlogMyOnlinePresence ? (
+                    <>
+                        <title>My Online Presence</title>
+                        <meta property="og:title" content="My Online Presence" />
+                        <link rel="canonical" href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={blogPostMyOnlinePresence} />
+                        <meta name="description" content={blogPostMyOnlinePresence} />
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="My Online Presence" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={blogPostMyOnlinePresence}/>
+                        <meta name="theme-color" content="#ff47ff" />
+                    </>
+                ) : isBlogInteractingWithMe ? (
+                    <>
+                        <title>{title}</title>
+                        <meta property='og:title' content={title} />
+                        <link rel='canonical' href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={blogPostInteractingWithMe} />
+                        <meta name='description' content={blogPostInteractingWithMe}/>
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="Unspoken Rules" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={blogPostInteractingWithMe}/>
                         <meta name="theme-color" content="#ff47ff" />
                     </>
                 ) : (
