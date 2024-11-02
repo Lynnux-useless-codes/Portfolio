@@ -1,5 +1,13 @@
 [
     {
+        "title": "Unspoken Rules",
+        "category": "Personal",
+        "url": "./blog/unspoken_rules",
+        "imageUrl": "./assets/images/unspoken_rules.png",
+        "date": "2024-11-02",
+        "description": "If you’ve ever wondered, “How... Click for more info."
+    },
+    {
         "title": "My Online Presence",
         "category": "Personal",
         "url": "./blog/my_online_presence",

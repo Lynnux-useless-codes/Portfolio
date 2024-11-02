@@ -1,6 +1,6 @@
 ---
 title: "Unspoken Rules"
-date: "2024-07-12"
+date: "2024-11-02"
 ---
 
 If you’ve ever wondered, “How do I best interact with this person?” you’re not alone! I thought I’d save us all some time by laying out the unspoken rules for interacting with me online. Think of this as a casual guide to avoid any awkward moments and to keep things fun and easygoing between us.
