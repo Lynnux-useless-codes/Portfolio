@@ -17,6 +17,7 @@ const projects: Project[] = [
     { title: "Emote's", category: "art designs", url: "https://lynnux.xyz/emotes", image: "/assets/images/Mercy.webp", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "OverwatchAimbot.com", category: "web development", url: "https://overwatchaimbot.com", image: "/assets/images/overwatchaimbot.png", blurImage: "/assets/images/Placeholder.jpg" },
     { title: "Crossworld Connections", category: "game development", url: "https://store.steampowered.com/developer/Lynnux", image: "/assets/images/crossworld connections.png", blurImage: "/assets/images/Placeholder.jpg" },
+    { title: "[Bash] Rule34 Scrapper", category: "Open-Source Project", url: "https://github.com/Lynnux-useless-codes/rule34-Scraper", image: "https://opengraph.githubassets.com/17ad6f1da98adf27ee03a7f43246b0b8fe66bbec3bc7e5cdb40c84bb708c9cff/Lynnux-useless-codes/rule34-Scraper", blurImage: "/assets/images/Placeholder.jpg" },
 ];
 
 export default function Portfolio() {

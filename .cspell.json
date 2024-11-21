@@ -1,0 +1,47 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": [],
+  "languageSettings": [
+    {
+      "languageId": "typescript",
+      "words": [
+        "tryforge"
+      ]
+    },
+    {
+      "languageId": "markdown",
+      "words": [
+        "Recieved",
+        "botforge",
+        "nolonger"
+      ]
+    }
+  ],
+  "words": [
+    "actionscript",
+    "agreedtoterms",
+    "akirasite",
+    "atleast",
+    "Automod",
+    "botchannel",
+    "bughunter",
+    "cmdid",
+    "commandinfo",
+    "crossworld",
+    "errorid",
+    "fieldone",
+    "fieldthree",
+    "freechannel",
+    "givemoney",
+    "howto",
+    "hypesquad",
+    "ibrokesomething",
+    "ifoundabug",
+    "Lynnux",
+    "overwatchaimbot",
+    "reactionroles",
+    "useravatar",
+    "whois"
+  ]
+}
