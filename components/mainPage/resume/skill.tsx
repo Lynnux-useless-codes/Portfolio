@@ -8,7 +8,7 @@ export default function Skills() {
             <ul className={`${styles.skillslist} content-card`}>
                 <li className={styles.skillsitem}>
                     <div className={styles.titlewrapper}>
-                        <h5 className="h5">Artistics</h5>
+                        <h5 className="h5">Artistic</h5>
                         <data className={styles.data} value="13">13%</data>
                     </div>
                     <div className={styles.skillprogressbg}>
@@ -17,7 +17,7 @@ export default function Skills() {
                 </li>
                 <li className={styles.skillsitem}>
                     <div className={styles.titlewrapper}>
-                        <h5 className="h5">Web design/development</h5>
+                        <h5 className="h5">Website design/development</h5>
                         <data className={styles.data} value="23">23%</data>
                     </div>
                     <div className={styles.skillprogressbg}>
@@ -26,7 +26,7 @@ export default function Skills() {
                 </li>
                 <li className={styles.skillsitem}>
                     <div className={styles.titlewrapper}>
-                        <h5 className="h5">Bot Development</h5>
+                        <h5 className="h5">Application Development</h5>
                         <data className={styles.data} value="45">45%</data>
                     </div>
                     <div className={styles.skillprogressbg}>

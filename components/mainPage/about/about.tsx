@@ -14,7 +14,7 @@ export default function About() {
           </header>
           <section className={styles.abouttext}>
             <p className={styles.pliot}>
-              Hi there i'm lynn and i am a passionate Discord bot/website developer with experience in various programming languages such as Python, JavaScript, and HTML/CSS.
+              Hi there i'm lynn and i am a passionate Application/website developer with experience in various programming languages such as Python, JavaScript, React, and HTML/CSS.
               I love creating new projects and bringing ideas to life through code. And as an extra i try my best creating twitch discord (chibi) emoji's at an amateur level.
             </p>
             <p className={styles.pliot}>

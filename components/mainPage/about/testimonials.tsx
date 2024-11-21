@@ -21,11 +21,11 @@ export default function Testimonials() {
                 <li className={styles.testimonialsitem}>
                     <div className={styles.contentcard} data-testimonials-item>
                         <figure className={styles.testimonialsavatarbox}>
-                            <Image className={styles.image} src="/assets/images/avatar-2.png" alt="PlaceHolder" width={80} height={80} data-testimonials-avatar/>
+                            <Image className={styles.image} src="/assets/images/HBS.png" alt="HighBoundStudios" width={80} height={80} data-testimonials-avatar/>
                         </figure>
-                        <h4 className={`h4 ${styles.testimonialsitemtitle}`} data-testimonials-title>PlaceHolder</h4>
+                        <h4 className={`h4 ${styles.testimonialsitemtitle}`} data-testimonials-title>HighBoundStudios</h4>
                         <div className={styles.testimonialstext} data-testimonials-text>
-                            <p>This is a PlaceHolder since noone else gave a testimonial</p>
+                            <p>Working with Lynnux was amazing. They took our vague ideas and turned them into something incredible. The custom gallery they built for us is both stunning and super easy to use—our whole team loves it! If you need someone who’s talented, reliable, and just gets it, Lynnux is your person.</p>
                         </div>
                     </div>
                 </li>
