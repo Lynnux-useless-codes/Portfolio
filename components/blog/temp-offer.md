@@ -15,7 +15,8 @@ For the next **48 hours**, I’m offering to build **basic websites** for **free
 
 I’ll create a **simple website** for you. Think of it as a great starting point—not a $400 custom professional site, but a functional and decent-looking one made with **Next.js**.  
 
-You’ll get:  
+You’ll get:
+
 - A basic site tailored to your needs (portfolio, small business, or personal blog).  
 - The source code for free (so you can host it yourself if you’d like).  
 
@@ -23,20 +24,22 @@ If you’re okay with something **basic** and not super polished, this is perfec
 
 ---
 
-## Want Hosting Too?  
+## Want Hosting Too?
 
-If you'd rather not deal with hosting, I can help! Here are your options:  
-- **Subdomain + Hosting:** Host your site on `yourname.lynnux.xyz` for just **$4/month**.  
-- **Custom Domain + Hosting:** Already have a custom domain? I’ll host your site for just **$3/month**.  
+If you'd rather not deal with hosting, I can help! Here are your options:
 
-These options are totally optional—you’re welcome to take the code and host it yourself!  
+- **Subdomain + Hosting:** Host your site on `yourname.lynnux.xyz` for just **$4/month**.
+- **Custom Domain + Hosting:** Already have a custom domain? I’ll host your site for just **$3/month**.
+
+These options are totally optional—you’re welcome to take the code and host it yourself!
 
 ---
 
 ## What's the Catch?  
 
-No hidden fees, but I do have a small request:  
-- If you like the site, please leave me a **testimonial** that I can showcase on my portfolio.  
+No hidden fees, but I do have a small request:
+
+- If you like the site, please leave me a **testimonial** that I can showcase on my portfolio.
 
 It’s a win-win: You get a free site, and I get more experience and feedback!  
 
@@ -54,10 +57,12 @@ It’s a win-win: You get a free site, and I get more experience and feedback!
 
 ## FAQs  
 
-### **How long will it take?**  
+### **How long will it take?**
+
 I’ll confirm your request within 48 hours. Development may take a bit longer, depending on how many requests I get.  
 
-### **Can I make revisions?**  
+### **Can I make revisions?**
+
 Sure, but within reason! These sites are free, so I may not have time for lots of changes.  
 
 ---
