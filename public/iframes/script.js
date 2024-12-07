@@ -77,7 +77,7 @@ function updateCountdown() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "Season 13 Active";
+        document.getElementById("countdown").innerHTML = "Season 14 Active";
     }
 }
 
