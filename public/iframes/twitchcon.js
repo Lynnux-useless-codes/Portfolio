@@ -1,4 +1,4 @@
-const targetTimestamp = 1748678400 * 1000;
+const targetTimestamp = 1748671200 * 1000;
 
 function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
