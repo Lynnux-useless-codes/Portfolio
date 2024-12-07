@@ -11,7 +11,7 @@ function updateUrlParameter(param, value) {
         url.searchParams.set(param, value);
     } else {
         url.searchParams.delete(param);
-    }
+    } 
     window.history.replaceState({}, '', url);
 }
 
