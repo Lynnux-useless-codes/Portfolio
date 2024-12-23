@@ -25,6 +25,7 @@ function App({ Component, pageProps }: AppProps) {
     const BlogPostUnspokenRules = "If you’ve ever wondered, “How do I best interact with this person?” you’re not alone! I thought I’d save us all some time by laying out the unspoken rules for interacting with me online. Think of this as a casual guide to avoid any awkward moments and to keep things fun and easygoing between us."
     const blogPostMyOnlinePresence = "One question I get a lot is, “What’s up with your pronouns?” If you’ve seen my profile, you might have noticed I go by \"any normative\" pronouns. But what exactly does that mean? This blog post is here to explain what that term means for me, why I choose it, and how I see my online presence and identity."
     const blogPostInteractingWithMe = "Living with multiple mental health conditions, including Bipolar II, ADHD, dyslexia, and Seasonal Affective Disorder (SAD), has a significant influence on how I interact with others online. These diagnoses aren’t just labels—they each come with their own set of challenges that shape my energy, focus, and ability to engage with others."
+    const marvelRivalsDescription = "Marvel Rivals has finally launched, and I can see why many people are excited about it. Yet, after spending some time with the game, I’ve realized it’s not a good fit for me. Here is why:";
 
     const router = useRouter();
     const isNoHelloPage = router.pathname === '/helper/nohello';
@@ -38,6 +39,7 @@ function App({ Component, pageProps }: AppProps) {
     const isBlogUnspokenRules = router.asPath === "/blog/unspoken_rules";
     const isBlogMyOnlinePresence = router.asPath === "/blog/my_online_presence";
     const isBlogInteractingWithMe = router.asPath === "/blog/interacting_with_me";
+    const isBlogMarvelRivals = router.asPath === "/blog/marvel_rivals";
 
     return (
         <>
@@ -138,6 +140,23 @@ function App({ Component, pageProps }: AppProps) {
                         <meta property="og:url" content={canonical} />
                         <meta property="og:type" content="website" />
                         <meta property="og:description" content={overwatchTimerDescription}/>
+                        <meta name="theme-color" content="#ff47ff" />
+                    </>
+                ) : isBlogMarvelRivals ? (
+                    <>
+                        <title>Why i don't play Marvel Rivals | Lynnux</title>
+                        <meta property="og:title" content="Why i don't play Marvel Rivals | Lynnux" />
+                        <link rel="canonical" href={canonical} />
+                        <meta property="og:site_name" content={canonical} />
+                        <meta property="og:description" content={marvelRivalsDescription} />
+                        <meta name="description" content={marvelRivalsDescription} />
+
+                        {/* Discord Embed */}
+                        <meta property="og:site_name" content="https://lynnux.xyz/" />
+                        <meta property="og:title" content="Why i don't play Marvel Rivals | Lynnux" />
+                        <meta property="og:url" content={canonical} />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:description" content={marvelRivalsDescription}/>
                         <meta name="theme-color" content="#ff47ff" />
                     </>
                 ) : isTwitchconTimer ? (
