@@ -1,5 +1,13 @@
 [
     {
+        "title": "Akira Origin Story",
+        "category": "Akira",
+        "url": "./blog/Akira-Origin",
+        "imageUrl": "./assets/images/Akira-Origin.png",
+        "date": "2024-12-28",
+        "description": "Akira’s story begins with two bot... Click for more info."
+    },
+    {
         "title": "Why Marvel Rivals isn't for Me",
         "category": "Personal",
         "url": "./blog/marvel_rivals",
