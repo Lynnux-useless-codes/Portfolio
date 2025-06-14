@@ -21,6 +21,9 @@ class MyDocument extends Document {
                     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
                     <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon.png" />
                     <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png" />
+
+                    {/* Analytics Platform */}
+                    <script defer src="https://analytics.lynnux.xyz/script.js" data-website-id="a059d2c7-1bf9-4deb-83fa-6ff2461115c7"></script>
                 </Head>
                 <body>
                     <Main />
